@@ -13,4 +13,7 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
-INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Spring Boot', 'https://cdn.pixabay.com/photo/2020/05/31/09/40/online-course-5242018_1280.jpg', 'https://cdn.pixabay.com/photo/2018/03/12/20/09/training-3220712_1280.jpg'); 
+INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Spring Boot', 'https://cdn.pixabay.com/photo/2020/05/31/09/40/online-course-5242018_1280.jpg', 'https://cdn.pixabay.com/photo/2018/03/12/20/09/training-3220712_1280.jpg');
+
+INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2022-05-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-05-01T03:00:00Z', 1);
+INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2022-06-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-06-01T03:00:00Z', 1);
