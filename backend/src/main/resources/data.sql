@@ -49,3 +49,13 @@ INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Segund
 INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Terceira notificação', TIMESTAMP WITH TIME ZONE '2022-05-29T18:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
 
 INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, user_id, offer_id, lesson_id) VALUES ('https://github.com/jonasmzsouza/ds-learn', TIMESTAMP WITH TIME ZONE '2022-06-10T22:00:00Z', 0, null, null, 1, 1, 4);
+
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 1', 'Corpo do tópico 1', TIMESTAMP WITH TIME ZONE '2022-05-20T18:00:00Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 2', 'Corpo do tópico 2', TIMESTAMP WITH TIME ZONE '2022-05-21T18:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 3', 'Corpo do tópico 3', TIMESTAMP WITH TIME ZONE '2022-05-22T18:00:00Z', 2, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 4', 'Corpo do tópico 4', TIMESTAMP WITH TIME ZONE '2022-05-23T18:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 5', 'Corpo do tópico 5', TIMESTAMP WITH TIME ZONE '2022-05-24T18:00:00Z', 1, 1, 2);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUES ('Título do tópico 6', 'Corpo do tópico 6', TIMESTAMP WITH TIME ZONE '2022-05-25T18:00:00Z', 2, 1, 3);
+
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
+INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
