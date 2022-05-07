@@ -59,3 +59,8 @@ INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) VALUE
 
 INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (1, 2);
 INSERT INTO tb_topic_likes (topic_id, user_id) VALUES (2, 1);
+
+INSERT INTO tb_reply (body, moment, author_id, topic_id) VALUES ('Tente limpar o cache do navegador', TIMESTAMP WITH TIME ZONE '2022-05-21T19:00:00Z', 1, 2);
+INSERT INTO tb_reply (body, moment, author_id, topic_id) VALUES ('Funcionou, obrigado!', TIMESTAMP WITH TIME ZONE '2022-05-21T20:00:00Z', 1, 1);
+
+INSERT INTO tb_reply_likes (reply_id, user_id) VALUES (1, 1);
