@@ -46,7 +46,7 @@ INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
 
 INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Primeira notificação', TIMESTAMP WITH TIME ZONE '2022-05-27T16:00:00Z', true, '/offers/1/resource/1/sections/1', 1); 
 INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Segunda notificação', TIMESTAMP WITH TIME ZONE '2022-05-28T17:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
-INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Terceira notificação', TIMESTAMP WITH TIME ZONE '2022-05-29T18:00:00Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Terceira notificação', TIMESTAMP WITH TIME ZONE '2022-05-29T18:00:00Z', false, '/offers/1/resource/1/sections/1', 1);
 
 INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, user_id, offer_id, lesson_id) VALUES ('https://github.com/jonasmzsouza/ds-learn', TIMESTAMP WITH TIME ZONE '2022-06-10T22:00:00Z', 0, null, null, 1, 1, 4);
 

@@ -34,7 +34,7 @@ public class UserService implements UserDetailsService {
 		User entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
 		return new UserDTO(entity);
 	}
-
+	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User user = repository.findByEmail(username);
@@ -44,5 +44,5 @@ public class UserService implements UserDetailsService {
 		}
 		logger.info("User found: " + username);
 		return user;
-	}
+	}	
 }
